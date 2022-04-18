@@ -1,0 +1,21 @@
+GET http://localhost:3000/subscribers
+###
+GET http://localhost:3000/subscribers/624b7d5c3ac4f8aa4a1726ca
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Viking",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+###
+
+DELETE http://localhost:3000/subscribers/624b93a78974de847d17ac60
+###
+PATCH  http://localhost:3000/subscribers/624b92f6d5a793ece51f3423
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}

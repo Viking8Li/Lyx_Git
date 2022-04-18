@@ -1,0 +1,23 @@
+/* #container1{
+    border: 1px solid ; 
+    height: 300px; 
+    width: 200px; 
+    display:inline-block;
+    background-color: red;
+}
+
+#container2{
+    border: 1px solid ; 
+    height: 300px;
+    width: 200px; 
+    display:inline-block; 
+    background-color: yellowgreen;
+} */
+#div1, #div2 {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}

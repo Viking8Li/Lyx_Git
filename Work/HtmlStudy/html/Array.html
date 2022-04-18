@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p>Good Morning Folks</p>
+        <button onclick="f1()">Click Here</button>
+        <p id="x"></p>
+        <script>
+           var fruit=["Banana", "Orange", "Apple", "Mango"];
+           document.getElementById("x").innerHTML=fruit;
+           function f1()
+           {
+            //    fruit.sort((a,b)=>(a>b?-1:1));
+               fruit.sort().reverse();
+               document.getElementById("x").innerHTML=fruit;
+           }
+        </script>
+    </body>
+</html>

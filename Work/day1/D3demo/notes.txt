@@ -1,0 +1,9 @@
+Update Pattern:(Update the D3 object)
+
+1. Data Join - select all matching elements on the screen with selectAll
+		and update the data that we are using
+2. Exit - use Exit() selector to remove the elements that dont exist in
+		out new array of data
+3. Update - set attributes for existing elements on the screen
+
+4. Enter - use the enter selector to set attribute for new items in our data array
