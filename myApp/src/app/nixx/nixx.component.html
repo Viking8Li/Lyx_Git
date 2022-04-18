@@ -1,0 +1,25 @@
+<mat-form-field id="m1">
+
+    <!-- <input type="text" placeholder="Netflix Webseries" matInput [formControl]="formControl" [matAutocomplete]="auto"> -->
+    <!-- <input matInput type="text" placeholder="Netflix Webseries" matInput [formControl]="formControl" [matAutocomplete]="auto">
+
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+        <mat-option *ngFor="let item of autoFilter |async" [value]="item">
+            {{item}}
+        </mat-option>
+    </mat-autocomplete> -->
+    <form [formGroup]="myForm">
+        <mat-form-field>
+            <input type="text" matInput placeholder="Names group" formControlName="namesGroup" required [matAutocomplete]="autoGroup">
+
+            <mat-autocomplete #autoGroup="matAutocomplete">
+                <mat-optgroup *ngFor="let itemGroup of dataGroupOptions |async" [label]="itemGroup.letter">
+                    <mat-option *ngFor="let item of itemGroup.names" [value]="item">
+                        {{item}}
+                    </mat-option>
+                </mat-optgroup>
+            </mat-autocomplete>
+        </mat-form-field>
+    </form>
+
+</mat-form-field>
