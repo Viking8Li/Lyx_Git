@@ -16,7 +16,7 @@ export class RegisterComponent implements OnInit {
     password:new FormControl(null,Validators.required),
     cpass:new FormControl(null,Validators.required)
   })
-  constructor(private _router:Router) { }//, private _user:UserService
+  constructor(private _router:Router, private _user:UserService) { }//
 
   ngOnInit() {
   }
@@ -35,11 +35,11 @@ export class RegisterComponent implements OnInit {
       console.log('Invalid Form'); return;
     }
 
-    // this._user.register(JSON.stringify(this.registerForm.value))
-    // .subscribe(
-    //   data=> {console.log(data); this._router.navigate(['/login']);},
-    //   error=>console.error(error)
-    // )
+    this._user.register(JSON.stringify(this.registerForm.value))
+    .subscribe(
+      data=> {console.log(data); this._router.navigate(['/login']);},
+      error=>console.error(error)
+    )
     // console.log(JSON.stringify(this.registerForm.value));
   }
 }

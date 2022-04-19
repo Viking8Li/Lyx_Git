@@ -1,3 +1,6 @@
 .container{
-    margin-top:5%;
-  }
+  margin-top:5%;
+}
+.custom {
+  width: 150px !important;
+}

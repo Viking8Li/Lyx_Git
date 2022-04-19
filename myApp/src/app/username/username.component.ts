@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class UsernameComponent implements OnInit {
 
   display: string = '';
-
   constructor() { }
 
   ngOnInit(): void {
@@ -20,5 +19,4 @@ export class UsernameComponent implements OnInit {
     .concat('_', (<HTMLInputElement>document.getElementById("lastname")).value
     , '_', Math.floor(Math.random()*10).toString())
   }
-
 }

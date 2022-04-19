@@ -10,12 +10,12 @@ import { Router } from '@angular/router';
 export class UserhomeComponent implements OnInit {
 
   username:String='';
-  constructor(private _router:Router) { //private _user:UserService, 
-    // this._user.user()
-    // .subscribe(
-    //   data=>this.addName(data),
-    //   error=>this._router.navigate(['/login'])
-    // )
+  constructor(private _router:Router, private _user:UserService) { //private _user:UserService, 
+    this._user.user()
+    .subscribe(
+      data=>this.addName(data),
+      error=>this._router.navigate(['/login'])
+    )
   }
 
   addName(data: any){
@@ -25,12 +25,12 @@ export class UserhomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  // logout(){
-  //   this._user.logout()
-  //   .subscribe(
-  //     data=>{console.log(data);this._router.navigate(['/login'])},
-  //     error=>console.error(error)
-  //   )
-  // }
+  logout(){
+    this._user.logout()
+    .subscribe(
+      data=>{console.log(data);this._router.navigate(['/login'])},
+      error=>console.error(error)
+    )
+  }
 
 }
