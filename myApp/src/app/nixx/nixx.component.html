@@ -10,7 +10,7 @@
     </mat-autocomplete> -->
     <form [formGroup]="myForm">
         <mat-form-field>
-            <input type="text" matInput placeholder="Names group" formControlName="namesGroup" required [matAutocomplete]="autoGroup">
+            <input type="text" matInput placeholder="Netflix Webseries" formControlName="namesGroup" required [matAutocomplete]="autoGroup">
 
             <mat-autocomplete #autoGroup="matAutocomplete">
                 <mat-optgroup *ngFor="let itemGroup of dataGroupOptions |async" [label]="itemGroup.letter">

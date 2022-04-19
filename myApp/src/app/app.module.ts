@@ -5,26 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FriendComponent } from './friend/friend.component';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule }  from '@angular/common/http';
 import { NixxComponent } from './nixx/nixx.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatInputModule} from '@angular/material/input'
+import { MatInputModule} from '@angular/material/input'
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { UsernameComponent } from './username/username.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FriendComponent,
-    NixxComponent
+    NixxComponent,
+    UsernameComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule,
     BrowserAnimationsModule,
     MatInputModule,
     MatFormFieldModule,    

@@ -17,16 +17,9 @@ export class FriendComponent implements OnInit {
  
       // If response comes hideloader() function is called
       // to hide that loader
-      if(Response){ 
-        hideloader();
-      }
       console.log(Response)
       this.li=Response;
     });
-    function hideloader(){
-      // document.getElementById('loading').style.display = 'none';
-      // !document.getElementById('loading')?.style.display;
-    }
   }
 }
 
