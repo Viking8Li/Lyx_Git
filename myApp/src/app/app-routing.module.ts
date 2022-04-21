@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EventComponent } from './event/event.component';
 import { FriendComponent } from './friend/friend.component';
 import { HomeComponent } from './home/home.component';
 import { NixxComponent } from './nixx/nixx.component';
@@ -10,7 +11,8 @@ const routes: Routes = [
   {path: 'friends', component: FriendComponent},
   {path: '', component: HomeComponent},
   {path: 'nixx', component: NixxComponent},
-  {path: 'username', component:UsernameComponent}
+  {path: 'username', component:UsernameComponent},
+  {path: 'event', component:EventComponent}
 ];
 
 @NgModule({

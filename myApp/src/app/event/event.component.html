@@ -1,0 +1,15 @@
+<div class="container">
+    <div style="margin-top:40px; padding:20px; 
+    background-color:#eff0f2;border-radius:15px;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.2);">
+        <h1>Upcoming Events </h1>
+        <hr>
+        <app-event-list [event]="event1" #thumbnail (eventClick)="onClicked($event)"></app-event-list>
+    </div>
+    <h3>{{thumbnail.sp}}</h3>
+    <button class="btn btn-primary" (click)="thumbnail.logfoo()">Log me some foo</button>
+</div>
+
+

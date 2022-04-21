@@ -13,6 +13,8 @@ import { MatInputModule} from '@angular/material/input'
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { UsernameComponent } from './username/username.component';
+import { EventComponent } from './event/event.component';
+import { EventListComponent } from './event/event-list/event-list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { UsernameComponent } from './username/username.component';
     HomeComponent,
     FriendComponent,
     NixxComponent,
-    UsernameComponent
+    UsernameComponent,
+    EventComponent,
+    EventListComponent
   ],
   imports: [
     BrowserModule,
