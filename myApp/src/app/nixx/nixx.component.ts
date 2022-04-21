@@ -26,7 +26,7 @@ export class NixxComponent implements OnInit {
   myForm : FormGroup = this.formBuilder.group({
     namesGroup: '',
   })
-
+  
   nameGroups: NameGroup[] = [{
     letter: 'A',
     names: ['Amelia', 'Alfie', 'Ava', 'Archie']
