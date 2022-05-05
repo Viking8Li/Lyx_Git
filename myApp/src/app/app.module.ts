@@ -15,6 +15,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { UsernameComponent } from './username/username.component';
 import { EventComponent } from './event/event.component';
 import { EventListComponent } from './event/event-list/event-list.component';
+import { JSProjectComponent } from './jsproject/jsproject.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EventListComponent } from './event/event-list/event-list.component';
     NixxComponent,
     UsernameComponent,
     EventComponent,
-    EventListComponent
+    EventListComponent,
+    JSProjectComponent
   ],
   imports: [
     BrowserModule,
