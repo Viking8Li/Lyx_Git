@@ -1,0 +1,19 @@
+<p>client works!</p>
+
+<table class="table" id='tab'>
+    <thead>
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">name</th>
+        <th scope="col">age</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let e of clientlist;">
+        <td>{{ e.id }}</td>
+        <td>{{ e.name }}</td>
+        <td>{{ e.age }}</td>
+        <td><a [routerLink]="['/edit', e.id, 'user', e.age]">Edit</a> | <a [routerLink]="['/delete',e.id]">Del</a></td>
+    </tr>
+    </tbody>
+</table>     

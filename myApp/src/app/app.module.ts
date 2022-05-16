@@ -16,6 +16,10 @@ import { UsernameComponent } from './username/username.component';
 import { EventComponent } from './event/event.component';
 import { EventListComponent } from './event/event-list/event-list.component';
 import { JSProjectComponent } from './jsproject/jsproject.component';
+import { ProductComponent } from './product/product.component';
+import { ClientComponent } from './client/client.component';
+import { FormDemoComponent } from './form-demo/form-demo.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { JSProjectComponent } from './jsproject/jsproject.component';
     UsernameComponent,
     EventComponent,
     EventListComponent,
-    JSProjectComponent
+    JSProjectComponent,
+    ProductComponent,
+    ClientComponent,
+    FormDemoComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

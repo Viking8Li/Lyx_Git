@@ -1,0 +1,17 @@
+<p>form-demo works!</p>
+<div class="container">
+    <form action="#" [formGroup]="registerForm">
+        <div>
+            <label for="Input">username:</label>
+            <input type="text" placeholder="username" formControlName="username">
+        </div>
+        <div>
+            <p>{{name}}</p>
+            <button type="button" (click)="register()">bbb</button>
+        </div>
+    </form>
+    <!-- <div *ngIf="registerForm.controls['username'].invalid" class="alert">
+        invalid Form
+    </div> -->
+
+</div>
