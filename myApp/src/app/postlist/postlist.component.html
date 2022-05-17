@@ -1,0 +1,13 @@
+<ul class="collection with-header">
+    <li class="collection-header">Posts</li>
+    <li (click)="gotoProductDetails(post.id)" class="collection-item highlight" *ngFor="let post of posts">
+      {{post.id}} {{post.body}} 
+      <span *ngIf="flag && post.id==this.id; then dis else nodis"></span>  
+    </li>
+</ul>
+<ng-template #dis style="color:blueviolet">
+    <app-commentlist [id]="this.id"></app-commentlist>
+</ng-template>
+<ng-template #nodis style="color:blueviolet">
+    No dis
+</ng-template>
