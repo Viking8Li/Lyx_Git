@@ -20,6 +20,7 @@ import { ProductComponent } from './product/product.component';
 import { ClientComponent } from './client/client.component';
 import { FormDemoComponent } from './form-demo/form-demo.component';
 import { TestComponent } from './test/test.component';
+import { ChildM1Component } from './child-m1/child-m1.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { TestComponent } from './test/test.component';
     ProductComponent,
     ClientComponent,
     FormDemoComponent,
-    TestComponent
+    TestComponent,
+    ChildM1Component
   ],
   imports: [
     BrowserModule,

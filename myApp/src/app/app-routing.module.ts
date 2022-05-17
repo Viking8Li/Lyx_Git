@@ -1,5 +1,6 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ChildM1Component } from './child-m1/child-m1.component';
 import { ClientComponent } from './client/client.component';
 import { EventComponent } from './event/event.component';
 import { FormDemoComponent } from './form-demo/form-demo.component';
@@ -23,7 +24,8 @@ const routes: Routes = [
   {path: 'product/:productId/photo/:photoId', component:ProductComponent},
   {path: 'client', component: ClientComponent},
   {path: 'formdemo', component: FormDemoComponent},
-  { path: 'test', component: TestComponent}
+  { path: 'test', component: TestComponent},
+  { path: 'child1', component:ChildM1Component}
 ];
 
 @NgModule({
