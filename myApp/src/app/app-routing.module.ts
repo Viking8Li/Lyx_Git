@@ -10,6 +10,7 @@ import { JSProjectComponent } from './jsproject/jsproject.component';
 import { NixxComponent } from './nixx/nixx.component';
 import { PostlistComponent } from './postlist/postlist.component';
 import { ProductComponent } from './product/product.component';
+import { SearchComponent } from './search/search.component';
 import { TestComponent } from './test/test.component';
 import { UsernameComponent } from './username/username.component';
 
@@ -27,7 +28,9 @@ const routes: Routes = [
   {path: 'formdemo', component: FormDemoComponent},
   {path: 'test', component: TestComponent},
   {path: 'comments/:id', component: CommentlistComponent},
-  {path: 'post', component: PostlistComponent}
+  {path: 'post', component: PostlistComponent},
+  {path: 'search', component: SearchComponent},
+  { path: 'payments', loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule) }
 
 ];
 

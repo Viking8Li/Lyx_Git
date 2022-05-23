@@ -22,6 +22,7 @@ import { FormDemoComponent } from './form-demo/form-demo.component';
 import { TestComponent } from './test/test.component';
 import { PostlistComponent } from './postlist/postlist.component';
 import { CommentlistComponent } from './commentlist/commentlist.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CommentlistComponent } from './commentlist/commentlist.component';
     FormDemoComponent,
     TestComponent,
     PostlistComponent,
-    CommentlistComponent
+    CommentlistComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
