@@ -51,7 +51,7 @@ import { SearchComponent } from './search/search.component';
     MatFormFieldModule,    
     MatAutocompleteModule,
     FormsModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

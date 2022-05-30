@@ -1,0 +1,10 @@
+<p>list-users works!</p>
+
+<app-filter-users [data]="cName" [tax]="taxVal" (updatedList)="updatedListP($event)"></app-filter-users>
+
+<h3>Data Received From children</h3>
+{{user | json | uppercase}}
+
+<h3>Data Received From Services</h3>
+
+{{users | json | lowercase}}

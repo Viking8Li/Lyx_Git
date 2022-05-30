@@ -30,7 +30,7 @@ const routes: Routes = [
   {path: 'comments/:id', component: CommentlistComponent},
   {path: 'post', component: PostlistComponent},
   {path: 'search', component: SearchComponent},
-  { path: 'payments', loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule) }
+  { path: 'payments', loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule) },
 
 ];
 
