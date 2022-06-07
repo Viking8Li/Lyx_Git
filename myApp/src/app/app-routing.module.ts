@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AutoComplateDemoComponent } from './auto-complate-demo/auto-complate-demo.component';
 import { ClientComponent } from './client/client.component';
 import { CommentlistComponent } from './commentlist/commentlist.component';
 import { EventComponent } from './event/event.component';
@@ -7,7 +8,6 @@ import { FormDemoComponent } from './form-demo/form-demo.component';
 import { FriendComponent } from './friend/friend.component';
 import { HomeComponent } from './home/home.component';
 import { JSProjectComponent } from './jsproject/jsproject.component';
-import { NixxComponent } from './nixx/nixx.component';
 import { PostlistComponent } from './postlist/postlist.component';
 import { ProductComponent } from './product/product.component';
 import { SearchComponent } from './search/search.component';
@@ -18,7 +18,6 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'friends', component: FriendComponent},
   {path: 'home', component: HomeComponent},
-  {path: 'nixx', component: NixxComponent},
   {path: 'username', component:UsernameComponent},
   {path: 'event', component:EventComponent},
   {path: 'jsproject', component:JSProjectComponent},
@@ -30,6 +29,7 @@ const routes: Routes = [
   {path: 'comments/:id', component: CommentlistComponent},
   {path: 'post', component: PostlistComponent},
   {path: 'search', component: SearchComponent},
+  {path: 'autoComplateDemo', component:AutoComplateDemoComponent},
   { path: 'payments', loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule) },
 
 ];

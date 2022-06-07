@@ -1,0 +1,8 @@
+<p>customer works!</p>
+
+<ul *ngFor="let user of users" (click)="click()">
+    <li>
+        {{user.name}}
+        <span *ngIf="flag"><br>{{user.address.street}} </span>
+    </li>
+</ul>

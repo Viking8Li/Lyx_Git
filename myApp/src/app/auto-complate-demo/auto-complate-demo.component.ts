@@ -14,11 +14,11 @@ export const _filter = (opt: string[], value: string): string[] => {
 }
 
 @Component({
-  selector: 'app-nixx',
-  templateUrl: './nixx.component.html',
-  styleUrls: ['./nixx.component.css']
+  selector: 'app-auto-complate-demo',
+  templateUrl: './auto-complate-demo.component.html',
+  styleUrls: ['./auto-complate-demo.component.css']
 })
-export class NixxComponent implements OnInit {
+export class AutoComplateDemoComponent implements OnInit {
 
   // formControl = new FormControl();
   // autoFilter!: Observable<string[]>;
