@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FriendComponent } from './friend/friend.component';
 import { HttpClientModule }  from '@angular/common/http';
-import { NixxComponent } from './nixx/nixx.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule} from '@angular/material/input'
@@ -23,13 +22,14 @@ import { TestComponent } from './test/test.component';
 import { PostlistComponent } from './postlist/postlist.component';
 import { CommentlistComponent } from './commentlist/commentlist.component';
 import { SearchComponent } from './search/search.component';
+import { ApiService } from './api.service.service';
+import { AutoComplateDemoComponent } from './auto-complate-demo/auto-complate-demo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FriendComponent,
-    NixxComponent,
     UsernameComponent,
     EventComponent,
     EventListComponent,
@@ -41,6 +41,7 @@ import { SearchComponent } from './search/search.component';
     PostlistComponent,
     CommentlistComponent,
     SearchComponent,
+    AutoComplateDemoComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +54,7 @@ import { SearchComponent } from './search/search.component';
     FormsModule, 
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
