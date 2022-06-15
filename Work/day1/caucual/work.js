@@ -29,12 +29,26 @@
 
 // var obj6 = JSON.parse(JSON.stringify(obj1));
 // console.log(obj6.s1);
-var mArray = [1,2,3,5,6];
-mArray.push(12);
-mArray.shift();
-mArray.unshift(1);
-let a = mArray.slice(2,5);
-a.splice(0,1);
-let b = mArray.join("- ");
-let c = b.split(" ",2);
-console.log(c);
+// var mArray = [1,2,3,5,6];
+// mArray.push(12);
+// mArray.shift();
+// mArray.unshift(1);
+// let a = mArray.slice(2,5);
+// a.splice(0,1);
+// let b = mArray.join("- ");
+// let c = b.split(" ",2);
+// console.log(c);
+// const A = 'abc';
+// let b = A.split('');
+// console.log(b);
+// var mArray = [1,2,3,5,6];
+// let b = mArray.join("");
+// console.log(b);
+let text = "abc";
+let arr = text.split('');
+let lc = 1;
+const a = text.split('',lc - 1);
+a.push(arr[lc - 1]);
+let b = a.join('');
+console.log(a);
+console.log(b)

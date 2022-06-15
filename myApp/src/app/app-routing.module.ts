@@ -1,5 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+import { AdpComponent } from './adp/adp.component';
 import { AutoComplateDemoComponent } from './auto-complate-demo/auto-complate-demo.component';
 import { ClientComponent } from './client/client.component';
 import { CommentlistComponent } from './commentlist/commentlist.component';
@@ -14,6 +16,8 @@ import { SearchComponent } from './search/search.component';
 import { TestComponent } from './test/test.component';
 import { UsernameComponent } from './username/username.component';
 
+import { ProductGuardGuard } from './router_guards/product-guard.guard'
+
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'friends', component: FriendComponent},
@@ -22,7 +26,7 @@ const routes: Routes = [
   {path: 'event', component:EventComponent},
   {path: 'jsproject', component:JSProjectComponent},
   {path: 'product/:id', component:ProductComponent},
-  {path: 'product/:productId/photo/:photoId', component:ProductComponent},
+  {path: 'product/:productId/photo/:photoId', component:ProductComponent, canActivate:[ProductGuardGuard]},
   {path: 'client', component: ClientComponent},
   {path: 'formdemo', component: FormDemoComponent},
   {path: 'test', component: TestComponent},
@@ -30,6 +34,7 @@ const routes: Routes = [
   {path: 'post', component: PostlistComponent},
   {path: 'search', component: SearchComponent},
   {path: 'autoComplateDemo', component:AutoComplateDemoComponent},
+  {path: 'adp', component:AdpComponent},
   { path: 'payments', loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule) },
 
 ];

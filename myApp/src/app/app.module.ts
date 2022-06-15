@@ -1,29 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { FriendComponent } from './friend/friend.component';
 import { HttpClientModule }  from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule} from '@angular/material/input'
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { UsernameComponent } from './username/username.component';
-import { EventComponent } from './event/event.component';
-import { EventListComponent } from './event/event-list/event-list.component';
-import { JSProjectComponent } from './jsproject/jsproject.component';
-import { ProductComponent } from './product/product.component';
-import { ClientComponent } from './client/client.component';
-import { FormDemoComponent } from './form-demo/form-demo.component';
-import { TestComponent } from './test/test.component';
-import { PostlistComponent } from './postlist/postlist.component';
-import { CommentlistComponent } from './commentlist/commentlist.component';
-import { SearchComponent } from './search/search.component';
-import { ApiService } from './api.service.service';
-import { AutoComplateDemoComponent } from './auto-complate-demo/auto-complate-demo.component';
+
+import { 
+  AppRoutingModule 
+  ,AppComponent
+  ,HomeComponent
+  ,FriendComponent
+  ,UsernameComponent
+  ,EventComponent
+  ,EventListComponent
+  ,JSProjectComponent
+  ,ProductComponent
+  ,ClientComponent
+  ,FormDemoComponent
+  ,TestComponent
+  ,PostlistComponent
+  ,CommentlistComponent
+  ,SearchComponent
+  ,ApiService
+  ,AutoComplateDemoComponent
+  ,AdpComponent
+} from './index'
+
 
 @NgModule({
   declarations: [
@@ -42,6 +46,7 @@ import { AutoComplateDemoComponent } from './auto-complate-demo/auto-complate-de
     CommentlistComponent,
     SearchComponent,
     AutoComplateDemoComponent,
+    AdpComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +59,7 @@ import { AutoComplateDemoComponent } from './auto-complate-demo/auto-complate-de
     FormsModule, 
     ReactiveFormsModule,
   ],
-  providers: [ApiService],
+  providers: [ApiService, ProductComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

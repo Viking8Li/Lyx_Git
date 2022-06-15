@@ -1,0 +1,38 @@
+<div class="container">
+    <h1>
+        Upcoming Angular Events
+    </h1>
+    <hr/>
+    <event-thumbnail #tn [event]="event1" (eventClick)="handleEventClicked($event)"></event-thumbnail>
+    <h3>{{tn.someporperty}}</h3>
+    <button class="btn btn-primary" (click)="tn.logFoo()">LogFoo</button>
+    <button class="btn btn-primary" (click)="tn.stopTimer()">Stop Timer</button>
+    <p [class.green] ="flag == true">Exploring the New Template Syntax
+        Clip	Practice Exercise	Finished Example
+        Repeating Data with ngFor
+        Repeating Data with ngFor	Finished
+        Handling Null Values with the Safe-Navigation Operator
+        Using the Safe-Navigation Operator	Finished
+        Hiding and Showing Content with ngIf
+        Hiding Elements with ngIf	Finished
+        Hiding Content with the [Hidden] Binding
+        Hiding Elements with [Hidden]	Finished
+        Hiding and Showing Content with ngSwitch
+        Hiding and Showing Elements with ngSwitch	Finished
+        Styling Components with ngClass
+        Adding Style with ngClass	Finished
+        Styling Components with ngStyle
+        Adding Style with ngStyle	Finished</p>
+        <br>
+    <p [ngClass] ="{red: flag == true, green: flag == false}">Exploring the New Template Syntax
+        Clip	Practice Exercise	Finished Example
+        Repeating Data with ngFor
+        Repeating Data with ngFor	Finished
+        Handling Null Values with the Safe-Navigation Operator</p>
+        <br>
+    <p [ngClass]="flagStatus()">Exploring the New Template Syntax
+        Clip	Practice Exercise	Finished Example
+        Repeating Data with ngFor
+        Repeating Data with ngFor	Finished
+        Handling Null Values with the Safe-Navigation Operator</p>
+</div>
