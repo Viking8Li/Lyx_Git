@@ -26,7 +26,7 @@ import {
   ,ApiService
   ,AutoComplateDemoComponent
   ,AdpComponent
-} from './index'
+} from './index';
 
 
 @NgModule({
@@ -46,7 +46,7 @@ import {
     CommentlistComponent,
     SearchComponent,
     AutoComplateDemoComponent,
-    AdpComponent,
+    AdpComponent
   ],
   imports: [
     BrowserModule,

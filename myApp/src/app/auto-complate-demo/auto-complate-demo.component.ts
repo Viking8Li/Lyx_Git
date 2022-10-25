@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms'; 
-import {map, startWith} from 'rxjs/operators';
+import { map, startWith} from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
 export interface NameGroup {
