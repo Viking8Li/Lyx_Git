@@ -55,7 +55,7 @@ router.get('/logout',isValidUser, function(req,res,next){
 //validation middleware function
 function isValidUser(req,res,next){
   if(req.isAuthenticated()) next();
-  else return res.status(401).json({message:'Unauthorized Request'});
+  else return res.status(401).json({message:'Unauthorized Request!'});
 }
 
 module.exports = router;
